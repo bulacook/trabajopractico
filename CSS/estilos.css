@@ -1,0 +1,91 @@
+/* Aca le doy estilo al header definiendo color de fondo, de letra
+etc. */
+header{
+    background-color: rgb(0, 0, 151);
+    color: white;
+    text-align: center;
+}
+/* Definí como clase maintittle el titulo principal de todas
+las páginas para darle un estilo propio */
+.maintittle{
+    font-size: 70px;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+/* Aca puse un id pero a futuro podría ser una clase
+para que cambie esta especie de subtitulo en todas las paginas */
+#subtittle1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+/* Aca defini una clase para los links que redirigen a otras 
+paginas del sitio y se conserve el estilo en todas las paginas */
+.links {
+    text-decoration: none;
+    color: white;
+    font-size: 30;
+}
+
+/* Aca se define el color de fondo del main */
+main{
+    background-color: cyan;
+}
+
+/* Aca le doy estilo a la etiqueta div que contiene a las otras
+etiquetas div, para que pueda dividirse en columnas y este centrado */
+#Sucursales {
+    display: flex;
+    text-align: center;
+
+}
+
+/* Aca defino el borde y el espacio que tiene que ocupar
+en pantalla la columna de cada sucursal */
+#ParquePatricios{
+    border: 1px solid black;
+    width: 33vw;
+}
+#Recoleta{
+    border: 1px solid black;
+    width: 33vw;
+}
+#Barracas{
+    border: 1px solid black;
+    width: 33vw;
+}
+
+/* Aca puse que el maps no ocupe todo el ancho de columna, que 
+solo ocupe el 90% y puse que tenga borde pero no pude hacer que funcione */
+.maps{
+    width: 80%;
+    border: solid black;
+
+}
+/* Esto es para que los h3 de todas las pags esten subrayados */
+h3{
+    text-decoration: underline;
+}
+
+/* Defino estilo del footer en todas las pags */
+footer{
+    background-color: blue;
+    color: cyan;
+}
+.fundadores{
+    text-align: center;
+    text-decoration: underline;
+} 
+#NI{
+    text-align: center;
+    text-decoration: underline;
+}
+.tipos{
+    width: 30%;
+    height: 30%;
+    justify-content: center;
+  align-items: center;
+  
+  
+}

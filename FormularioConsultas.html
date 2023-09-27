@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Consultas</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="shortcut icon" href="./IMAGENES/HAMBURGUESA.png" type="hamburguesa">
+</head>
+<body>
+    <header align="center">
+<h1 class="maintittle">Formulario de Consultas</h1>
+<p>Enlaces de interés</p>
+<a class="links" href="index.html">Inicio</a>
+<a class="links" href="QuienesSomos.html">¿Quiénes Somos?</a>
+<a class="links" href="FormularioConsultas.html">Formulario de Consultas</a>
+<a class="links" href="IniciaSesion.html">Iniciar Sesion</a>
+<a class="links" href="PreguntasFrecuentes.html">Preguntas Frecuentes</a>
+<a class="links" href="Sucursales.html">Sucursales cercanas</a>
+    </header>
+    <main>
+        <h2>Formulario de registro</h2>
+    <form action="show-data.html" target="_blank">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="firstname">Nombre: </label>
+            <input size="30" type="text" name="firstname" placeholder="Ingrese su nombre aqui...">
+            <label for="lastname">Apellido:</label>
+            <input size="30" type="text" name="lastname" placeholder="Ingrese su apellido aqui...">
+            <br><br>
+            <label for="street">Direccion:</label>
+            <input type="text" name="address" placeholder="Ingrese su dirección aqui...">
+            <label for="city">Ciudad: </label>
+            <input type="text" name="city" value="C.A.B.A.">
+            <br><br>
+            <label for="zipcode">Código Postal:</label>
+            <input type="text" name="zipcode" placeholder="Ingrese su codigo postal aqui...">
+            <label for="telefono">Telefono: </label>
+            <input type="tel" name="telefono" placeholder="Ingrese su telefono aqui ....">
+            <br><br>
+            <label for="BirthDate">Fecha Nac.(mm/dd/yyyy): </label>
+            <input type="date" name="birthdate">
+            <p>Género (Radio)
+                <input type="radio" name="gender" value="hombre" checked>Hombre
+                <input type="radio" name="gender" value="Mujer">Mujer
+                <input type="radio" name="gender" value="Otro"> Otro
+            </p>
+        </fieldset>
+        <p> Conocimientos previos: (checkbox)
+            <input type="checkbox" name="conocimientos" value="HTML"> HTML
+            <input type="checkbox" name="conocimientos" value="CSS"> CSS
+            <input type="checkbox" name="conocimientos" value="BOOTSTRAP"> Bootstrap
+            <input type="checkbox" name="conocimientos" value="Javascript"> Javascript
+            <input type="checkbox" name="conocimientos" value="BaseDeDatos"> Base de Datos
+            <input type="checkbox" name="conocimientos" value="Python"> Python
+            <input type="checkbox" name="conocimientos" value="Django"> Django
+        </p>
+        <label for="estudios">Estudios: (Select)</label>
+        <select id="estudios" name="estudios">
+            <option value="primaria">Primaria</option>
+            <option value="secundaria">Secundaria</option>
+            <option value="terciario">Terciario</option>
+            <option value="universitario">Universitario</option>
+        </select>
+        <br>
+        <label for="comentarios">Comentarios:</label> <textarea name="comentarios" rows="5" cols="30"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+        <button type="reset">Reset</button>
+    </form>
+    <p>Si usted hace click en el boton "Enviar", la informacion sera enviada a la pagina "show_data.html"
+
+    </main>
+    <footer>
+        <hr>
+        <p align="center">Sitio web desarrollado por Fast Food S.A.</p>
+    </footer>
+    
+</body>
+</html>
