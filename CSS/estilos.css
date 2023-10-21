@@ -86,15 +86,7 @@ etiquetas div, para que pueda dividirse en columnas y este centrado */
 
 /* Aca defino el borde y el espacio que tiene que ocupar
 en pantalla la columna de cada sucursal */
-#ParquePatricios {
-    width: 33vw;
-}
-
-#Recoleta {
-    width: 33vw;
-}
-
-#Barracas {
+.sucursal {
     width: 33vw;
 }
 
@@ -227,7 +219,7 @@ p {
     background-position: center;
     position: relative;
     text-align: center;
-    object-fit: cover;
+    /*object-fit: cover;*/
 }
 
 .descrip {
@@ -262,9 +254,7 @@ p {
     background-size: cover;
     margin-top: 0px;
     margin-bottom: 0px;
-    flex-direction: row;
-    justify-content: space-around;
-}
+}   
 
 footer {
     color: aliceblue;
@@ -284,21 +274,52 @@ footer {
 .creditos {
     text-align: center;
 }
-
-[class*="col-"] {
-    /*a todas las clases que comiencen con col- ponele 100%*/
-    width: 100%;
+@media only screen and (min-width: 768px) {
+    .cajas{
+        display: flex;
+    }
+}
+@media screen and (max-width: 768px) {
+    .cajas{
+        display: flex;
+    }
+    .descrip{
+        font-size: 10px;
+    }
 }
 
-@media only screen and (min-width: 768px) {}
-
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    .cajas{
+        display: flex;
+       
+    }
+    
+}
 
 @media screen and (max-width: 600px) {
     .cajas {
-        flex-direction: column;
-        flex-wrap: wrap;
         display: block;
+        margin-left:  0px;
+        margin-right: 0px;
+    }
+    #Sucursales{
+        display: block;
+    }
+    .sucursal{
+        width: 100vw;
+    }
+    .tarjeta{
+        height: 500px;
+    }
+    .caja{
+        width: 100vw;
+    }
+    #invertida{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .descrip{
+        font-size: 30px;
     }
 
 }
