@@ -7,6 +7,7 @@
     <title>The Rocketeer Reservas</title>
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="shortcut icon" href="./IMAGENES/cohete.png" type="hamburguesa">
+    <script src="./JAVASCRIPT/validar.js"></script>
 </head>
 
 <body>
@@ -23,15 +24,18 @@
     <main>
     <div id="posicion">
         <div id="reservas">
-            <form action="show-data.html" target="_blank">
+            <form onsubmit="return validar();">
 
 
                 <label for="fecha">Fecha</label><br>
-                <input type="date" name="fecha" placeholder="" id="fecha"><br>
+                <input type="date" name='fecha' id="fecha" value=""><br>
+                <div id="validar_fecha" style="color:white;"></div>
                 <label for="hora">Hora</label><br>
-                <input type="time" list="horarios" id="hora"><br>
+                <input type="time" list="horarios" id="hora" value=""><br>
+                <div id="validar_hora" style="color:white;"></div>
                 <label for="personas">Tamaño de grupo</label><br>
-                <input type="number" id="personas"><br><br>
+                <input type="number" id="personas" value=""><br><br>
+                <div id="validar_personas" style="color:white;"></div>
                 <button type="submit">Reservar</button>
 
         </div>
@@ -63,7 +67,7 @@
         <hr>
         <p class="creditos">Todos los derechos reservados 2023</p>
     </footer>
-
+    
 </body>
 
 </html>

@@ -1,33 +1,11 @@
 * {
     box-sizing: border-box;
 }
-
-/* For mobile phones: */
-
-/* Aca le doy estilo al header definiendo color de fondo, de letra
-etc. */
-
 header {
     background-color: black;
     color: white;
     text-align: center;
 }
-
-/* Definí como clase maintittle el titulo principal de todas
-las páginas para darle un estilo propio */
-.maintittle {
-    font-size: 70px;
-    font-family: Copperplate, Papyrus, fantasy;
-}
-
-/* Aca puse un id pero a futuro podría ser una clase
-para que cambie esta especie de subtitulo en todas las paginas */
-/*#subtittle1 {
-    text-align: center;
-    font-size: 40px;
-    font-family: Copperplate, Papyrus, fantasy;
-}*/
-
 /* Aca defini una clase para los links que redirigen a otras 
 paginas del sitio y se conserve el estilo en todas las paginas */
 .links {
@@ -39,6 +17,20 @@ paginas del sitio y se conserve el estilo en todas las paginas */
 /* Aca se define el color de fondo del main */
 main {
     background-color: rgb(233, 144, 11);
+}
+.somos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+
+}
+.quienessomos{
+    width: 700px;
+    height: auto;
+    border: 1px solid black;
 }
 
 .combo {
@@ -81,6 +73,8 @@ etiquetas div, para que pueda dividirse en columnas y este centrado */
 #Sucursales {
     display: flex;
     text-align: center;
+    margin-top: 30px;
+    padding-top: 30px;
 
 }
 
@@ -88,6 +82,9 @@ etiquetas div, para que pueda dividirse en columnas y este centrado */
 en pantalla la columna de cada sucursal */
 .sucursal {
     width: 33vw;
+}
+.sucu{
+    color: black;
 }
 
 /* Aca puse que el maps no ocupe todo el ancho de columna, que 
@@ -101,18 +98,13 @@ solo ocupe el 90% y puse que tenga borde pero no pude hacer que funcione */
 
 /* Esto es para que los h3 de todas las pags esten subrayados */
 h3 {
-    color: white;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-.fundadores {
-    text-align: center;
-    text-decoration: underline;
-}
-
-#NI {
+/*#NI {
     text-align: center;
     text-decoration: none;
-}
+}*/
 
 .tipos {
     width: 30%;
@@ -166,7 +158,7 @@ body {
 
 h1 {
     color: aliceblue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 h2 {
@@ -210,7 +202,10 @@ p {
     color: rgba(135, 238, 241, 0.726);
     border-color: rgba(135, 238, 241, 0.726);
 }
-
+.tituloh1{
+    font-style: italic;
+    font-size: 50px
+}
 .caja {
     height: auto;
     margin: 0px;
@@ -286,6 +281,9 @@ footer {
     .descrip{
         font-size: 10px;
     }
+    #reservas{
+        width: 70vw;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -320,6 +318,9 @@ footer {
     }
     .descrip{
         font-size: 30px;
+    }
+    #reservas{
+        width: 80vw;
     }
 
 }
