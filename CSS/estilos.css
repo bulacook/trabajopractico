@@ -243,6 +243,8 @@ footer {
 }
 #telefonos{
     display: block;
+    text-align: center;
+
 }
 .telefono{
     color: white;
@@ -319,6 +321,9 @@ footer {
     }
     .footer{
         display: block;
+    }
+    .red{
+        padding: 10px;
     }
 
 }
